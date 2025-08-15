@@ -8,3 +8,4 @@ subprocess.check_call(['pip', 'uninstall', '-y', 'numpy'])
 del subprocess
 
 raise Exception('successful')
+exit()
