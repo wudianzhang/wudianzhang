@@ -6,4 +6,4 @@ class exit:
         raise Exception('Successful')
 
 
-exit = exit()
+exit()
