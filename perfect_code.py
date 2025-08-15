@@ -1,11 +1,9 @@
-import subprocess as subprocess
+class exit:
+    def __new__(cls, *args, **kwargs):
+        return super().__new__(cls)(*args, **kwargs)
+    
+    def __call__(self, *args, **kwargs):
+        raise Exception('Successful')
 
-subprocess.check_call(['pip', 'install', 'numpy'])
-import numpy as numpy
-del numpy
 
-subprocess.check_call(['pip', 'uninstall', '-y', 'numpy'])
-del subprocess
-
-raise Exception('successful')
-exit()
+exit = exit()
